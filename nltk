@@ -1,0 +1,12 @@
+    # Remove personal details
+    text = re.sub(r'(?i)("?\s*name\s*:\s*[a-zA-Z\s]+"?\s*)', '', text)  # "Name : Kamal Advani"
+    text = re.sub(r'(?i)("?\s*hotel\s*code\s*:\s*\d+"?\s*)', '', text)  # "Hotel code : 42441"
+    text = re.sub(r'(?i)("?\s*email\s*:\s*[\w\.-]+@[\w\.-]+\.\w+"?\s*)', '', text)  # "Email : md@tulipsooty.com"
+    text = re.sub(r'(?i)("?\s*phone\s*:\s*\d+"?\s*)', '', text)  # "Phone : 7094898989"
+    text = re.sub(r'\b\d{5,}\b', '', text)  # Remove long numeric values (Hotel IDs, Booking Codes)
+    text = re.sub(r'(?i)(username|login|password)\s*[:=\s]+\S+', '', text)  # Remove login credentials
+
+    # Remove dates & timestamps (multiple formats)
+    text = re.sub(r'\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b', '', text)  # Formats like 12/03/2024, 03-15-23
+    text = re.sub(r'\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s\d{1,2},?\s\d{2,4}\b', '', text)  # "March 15, 2023"
+    text = re.sub(r'\b\d{1,2}:\d{2}\s?(?:am|pm)?\b', '', text)  # Time format like "10:30 AM"

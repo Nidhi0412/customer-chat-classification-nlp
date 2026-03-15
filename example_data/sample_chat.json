@@ -1,0 +1,99 @@
+{
+  "_comment": "⚠️ SYNTHETIC DATA ONLY - This is example data for demonstration purposes. No real customer data.",
+  "chatId": "chat_example_001",
+  "startTime": "2024-03-15T10:30:00Z",
+  "endTime": "2024-03-15T10:45:00Z",
+  "status": "closed",
+  "messages": [
+    {
+      "messageId": "msg_001",
+      "timestamp": "2024-03-15T10:30:15Z",
+      "sender": {
+        "t": "v",
+        "name": "Visitor"
+      },
+      "msg": "Hi, I need help with my booking"
+    },
+    {
+      "messageId": "msg_002",
+      "timestamp": "2024-03-15T10:30:30Z",
+      "sender": {
+        "t": "a",
+        "name": "Agent"
+      },
+      "msg": "Hello! I'd be happy to help. What's your reservation number?"
+    },
+    {
+      "messageId": "msg_003",
+      "timestamp": "2024-03-15T10:31:00Z",
+      "sender": {
+        "t": "v",
+        "name": "Visitor"
+      },
+      "msg": "I want to change my check-in date"
+    },
+    {
+      "messageId": "msg_004",
+      "timestamp": "2024-03-15T10:31:30Z",
+      "sender": {
+        "t": "a",
+        "name": "Agent"
+      },
+      "msg": "Sure, I can help with that. What's your new preferred check-in date?"
+    },
+    {
+      "messageId": "msg_005",
+      "timestamp": "2024-03-15T10:32:00Z",
+      "sender": {
+        "t": "v",
+        "name": "Visitor"
+      },
+      "msg": "Can I move it from March 20 to March 22?"
+    },
+    {
+      "messageId": "msg_006",
+      "timestamp": "2024-03-15T10:32:30Z",
+      "sender": {
+        "t": "a",
+        "name": "Agent"
+      },
+      "msg": "Let me check availability for you."
+    },
+    {
+      "messageId": "msg_007",
+      "timestamp": "2024-03-15T10:33:00Z",
+      "sender": {
+        "t": "a",
+        "name": "Agent"
+      },
+      "msg": "Good news! We have availability on March 22. I've updated your reservation."
+    },
+    {
+      "messageId": "msg_008",
+      "timestamp": "2024-03-15T10:33:15Z",
+      "sender": {
+        "t": "v",
+        "name": "Visitor"
+      },
+      "msg": "Thank you so much!"
+    },
+    {
+      "messageId": "msg_009",
+      "timestamp": "2024-03-15T10:33:30Z",
+      "sender": {
+        "t": "a",
+        "name": "Agent"
+      },
+      "msg": "You're welcome! Is there anything else I can help you with?"
+    },
+    {
+      "messageId": "msg_010",
+      "timestamp": "2024-03-15T10:33:45Z",
+      "sender": {
+        "t": "v",
+        "name": "Visitor"
+      },
+      "msg": "No, that's all. Thanks!"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+config.yaml
+secrets.json
+*.key
+*.pem
+
+# Database Credentials
+db_config.py
+database.ini
+
+# API Keys
+api_keys.txt
+credentials/
+
+# Data Files (Contains Confidential Information)
+*.csv
+*.xlsx
+*.xls
+*.json
+*.npy
+*.index
+
+# Exclude specific data directories
+Chat_preprocessing/*.csv
+Chat_preprocessing/*.xlsx
+Chat_preprocessing/results/
+Chat_preprocessing/Sep/
+Chat_preprocessing/Oct/
+Chat_preprocessing/Nov/
+Chat_preprocessing/Dec/
+Chat_preprocessing/Jan/
+Chat_preprocessing/Feb/
+Chat_preprocessing/Mar/
+Chat_preprocessing/Apr/
+Chat_preprocessing/May/
+Chat_preprocessing/Jun/
+Chat_preprocessing/Jul/
+Chat_preprocessing/Aug/
+
+# But include example data
+!example_data/
+!example_data/*.csv
+!example_data/*.json
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# FAISS indices (large files)
+*.index
+embeddings/
+
+# Model files (if downloaded locally)
+models/
+*.bin
+*.pt
+*.pth
+
+# SpaCy models (if not using system-wide)
+en_core_web_sm/
+en_core_web_md/
+en_core_web_lg/
+
+# NLTK data (if downloaded locally)
+nltk_data/
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Documentation build
+docs/_build/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+backup/
+backups/
+*.backup
+
+# Archives
+archive/
+old/
+
+# Large files
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Sensitive outputs
+output/
+results/
+processed_data/
+
+# Backup and temporary documentation files
+README_BACKUP.md
+README_LOCAL.md
+*_BACKUP.*
+
+# Old project directories
+Chat_classification1/
+fasttext_models/
+
+# Processed data files (large CSV files)
+fully_processed_customer_chats_fast.csv
+*_processed_*.csv
+
+# Temporary scripts
+preprocess_chats.py
+process_chats.py
+
+# Upload helper scripts (optional - keep if you want)
+upload_to_github.sh
+
+# Testing
+.tox/
+.coverage
+htmlcov/
+test_results/
+
+# CI/CD
+.github/workflows/secrets/
+.gitlab-ci-local/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# AWS
+.aws/
+aws-credentials.txt
+
+# Azure
+.azure/
+
+# GCP
+gcp-credentials.json
